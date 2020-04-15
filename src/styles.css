@@ -1,0 +1,18 @@
+html,
+input,
+textarea {
+  background: #eee;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  background: rgb(255, 255, 255);
+  margin: 20px auto;
+  max-width: 42em;
+  padding: 20px;
+}
