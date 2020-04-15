@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/demos/slate-editor-example/static/css/main.c1c25d9f.chunk.css",
+    "main.js": "/demos/slate-editor-example/static/js/main.a2235f0c.chunk.js",
+    "main.js.map": "/demos/slate-editor-example/static/js/main.a2235f0c.chunk.js.map",
+    "runtime-main.js": "/demos/slate-editor-example/static/js/runtime-main.ef984aaf.js",
+    "runtime-main.js.map": "/demos/slate-editor-example/static/js/runtime-main.ef984aaf.js.map",
+    "static/js/2.2e45f874.chunk.js": "/demos/slate-editor-example/static/js/2.2e45f874.chunk.js",
+    "static/js/2.2e45f874.chunk.js.map": "/demos/slate-editor-example/static/js/2.2e45f874.chunk.js.map",
+    "index.html": "/demos/slate-editor-example/index.html",
+    "precache-manifest.f059306c4526bab1c7c10bf3ea5e0f09.js": "/demos/slate-editor-example/precache-manifest.f059306c4526bab1c7c10bf3ea5e0f09.js",
+    "service-worker.js": "/demos/slate-editor-example/service-worker.js",
+    "static/css/main.c1c25d9f.chunk.css.map": "/demos/slate-editor-example/static/css/main.c1c25d9f.chunk.css.map",
+    "static/js/2.2e45f874.chunk.js.LICENSE.txt": "/demos/slate-editor-example/static/js/2.2e45f874.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef984aaf.js",
+    "static/js/2.2e45f874.chunk.js",
+    "static/css/main.c1c25d9f.chunk.css",
+    "static/js/main.a2235f0c.chunk.js"
+  ]
+}
