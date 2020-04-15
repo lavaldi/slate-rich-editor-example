@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/slate-editor-example/static/css/main.c1c25d9f.chunk.css",
-    "main.js": "/slate-editor-example/static/js/main.a2235f0c.chunk.js",
-    "main.js.map": "/slate-editor-example/static/js/main.a2235f0c.chunk.js.map",
-    "runtime-main.js": "/slate-editor-example/static/js/runtime-main.b1c15c6c.js",
-    "runtime-main.js.map": "/slate-editor-example/static/js/runtime-main.b1c15c6c.js.map",
-    "static/js/2.2e45f874.chunk.js": "/slate-editor-example/static/js/2.2e45f874.chunk.js",
-    "static/js/2.2e45f874.chunk.js.map": "/slate-editor-example/static/js/2.2e45f874.chunk.js.map",
-    "index.html": "/slate-editor-example/index.html",
-    "precache-manifest.ea8c8413316ba567b1c26aa203071057.js": "/slate-editor-example/precache-manifest.ea8c8413316ba567b1c26aa203071057.js",
-    "service-worker.js": "/slate-editor-example/service-worker.js",
-    "static/css/main.c1c25d9f.chunk.css.map": "/slate-editor-example/static/css/main.c1c25d9f.chunk.css.map",
-    "static/js/2.2e45f874.chunk.js.LICENSE.txt": "/slate-editor-example/static/js/2.2e45f874.chunk.js.LICENSE.txt"
+    "main.css": "/slate-rich-editor-example/static/css/main.c1c25d9f.chunk.css",
+    "main.js": "/slate-rich-editor-example/static/js/main.a2235f0c.chunk.js",
+    "main.js.map": "/slate-rich-editor-example/static/js/main.a2235f0c.chunk.js.map",
+    "runtime-main.js": "/slate-rich-editor-example/static/js/runtime-main.9d506f3e.js",
+    "runtime-main.js.map": "/slate-rich-editor-example/static/js/runtime-main.9d506f3e.js.map",
+    "static/js/2.2e45f874.chunk.js": "/slate-rich-editor-example/static/js/2.2e45f874.chunk.js",
+    "static/js/2.2e45f874.chunk.js.map": "/slate-rich-editor-example/static/js/2.2e45f874.chunk.js.map",
+    "index.html": "/slate-rich-editor-example/index.html",
+    "precache-manifest.78c7321d509efe406db3465eb3eecf64.js": "/slate-rich-editor-example/precache-manifest.78c7321d509efe406db3465eb3eecf64.js",
+    "service-worker.js": "/slate-rich-editor-example/service-worker.js",
+    "static/css/main.c1c25d9f.chunk.css.map": "/slate-rich-editor-example/static/css/main.c1c25d9f.chunk.css.map",
+    "static/js/2.2e45f874.chunk.js.LICENSE.txt": "/slate-rich-editor-example/static/js/2.2e45f874.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1c15c6c.js",
+    "static/js/runtime-main.9d506f3e.js",
     "static/js/2.2e45f874.chunk.js",
     "static/css/main.c1c25d9f.chunk.css",
     "static/js/main.a2235f0c.chunk.js"
