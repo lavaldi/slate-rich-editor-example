@@ -8,6 +8,7 @@ import { withImages, addImage } from './utils/images'
 import { toggleBlock, isBlockActive } from './utils/blocks'
 import { toggleMark, isMarkActive } from './utils/marks'
 import { withHtml, deserialize } from './utils/deserialize'
+import { serialize } from './utils/serialize'
 import { INITIAL_VALUE, HOTKEYS } from './constants'
 import Toolbar from './Toolbar'
 import Button from './Button'
@@ -105,13 +106,23 @@ const RichEditor = ({ initialValue }) => {
     const parsed = new DOMParser().parseFromString(initialValue, 'text/html')
     serializedInitialValue = deserialize(parsed.body);
   }
+  console.log(serializedInitialValue);
   const [value, setValue] = useState(serializedInitialValue)
+  const [htmlValue, setHtmlValue] = useState("")
   const renderElement = useCallback(props => <Element {...props} />, [])
   const renderLeaf = useCallback(props => <Leaf {...props} />, [])
   const editor = useMemo(() => withHtml(withImages(withLinks(withHistory(withReact(createEditor()))))), [])
 
+  const convertToHTML = () => {
+    setHtmlValue(serialize(editor));
+    console.log("htmlValue", htmlValue);
+  }
+
   return (
-    <Slate editor={editor} value={value} onChange={setValue}>
+    <Slate editor={editor} value={value} onChange={value => {
+      setValue(value);
+      convertToHTML();
+    }}>
       <Toolbar>
         <ToolButton format="bold" icon="format_bold" type="mark" />
         <ToolButton format="italic" icon="format_italic" type="mark" />
