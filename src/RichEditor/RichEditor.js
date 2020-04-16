@@ -7,7 +7,8 @@ import { withLinks, insertLink, isLinkActive } from './utils/links'
 import { withImages, addImage } from './utils/images'
 import { toggleBlock, isBlockActive } from './utils/blocks'
 import { toggleMark, isMarkActive } from './utils/marks'
-import { HOTKEYS } from './constants'
+import { withHtml, deserialize } from './utils/deserialize'
+import { INITIAL_VALUE, HOTKEYS } from './constants'
 import Toolbar from './Toolbar'
 import Button from './Button'
 import Icon from './Icon'
@@ -98,48 +99,16 @@ const ToolButton = ({ format, icon, type }) => {
   )
 }
 
-const initialValue = [
-  {
-    type: 'paragraph',
-    children: [
-      { text: 'This is editable ' },
-      { text: 'rich', bold: true },
-      { text: ' text, ' },
-      { text: 'much', italic: true },
-      { text: ' '},
-      { text: 'better', underline: true },
-      { text: ' than a ' },
-      { text: '<textarea>', code: true },
-      { text: ' '},
-      { text: 'yay', strikethrough: true},
-      { text: '!' },
-    ],
-  },
-  {
-    type: 'paragraph',
-    children: [
-      {
-        text:
-          "Since it's rich text, you can do things like turn a selection of text ",
-      },
-      { text: 'bold', bold: true },
-      {
-        text:
-          ', or add a semantically rendered block quote in the middle of the page, like this:',
-      },
-    ],
-  },
-  {
-    type: 'paragraph',
-    children: [{ text: 'Try it out for yourself!' }],
-  },
-]
-
-const RichEditor = () => {
-  const [value, setValue] = useState(initialValue)
+const RichEditor = ({ initialValue }) => {
+  let serializedInitialValue = INITIAL_VALUE
+  if (initialValue) {
+    const parsed = new DOMParser().parseFromString(initialValue, 'text/html')
+    serializedInitialValue = deserialize(parsed.body);
+  }
+  const [value, setValue] = useState(serializedInitialValue)
   const renderElement = useCallback(props => <Element {...props} />, [])
   const renderLeaf = useCallback(props => <Leaf {...props} />, [])
-  const editor = useMemo(() => withImages(withLinks(withHistory(withReact(createEditor())))), [])
+  const editor = useMemo(() => withHtml(withImages(withLinks(withHistory(withReact(createEditor()))))), [])
 
   return (
     <Slate editor={editor} value={value} onChange={setValue}>
