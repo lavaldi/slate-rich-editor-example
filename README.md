@@ -26,7 +26,6 @@ yarn start
 
 **Elements**
 - Paragraph
-- Code
 - Image
 - Link
 - List
