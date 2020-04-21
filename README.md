@@ -1,13 +1,56 @@
-# Slate Rich Editor
+# Slate.js Rich Editor
 
-## Available Scripts
+Example of a rich editor with the capability of adding links and images by url.
 
-In the project directory, you can run:
+## Demo
 
-### `yarn start`
+Go to https://lavaldi.com/slate-rich-editor-example/
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installing / Getting started
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```shell
+git clone https://github.com/lavaldi/slate-rich-editor-example.git
+cd slate-rich-editor-example/
+yarn install
+```
+
+## Developing
+
+Runs the app in the development mode.
+
+```shell
+yarn start
+```
+
+## Features
+
+**Elements**
+- Paragraph
+- Code
+- Image
+- Link
+- List
+
+**Marks**
+- Bold
+- Inline code
+- Italic
+- Strikethrough
+- Underline
+
+**Utilities**
+- Paste Html
+- Toolbar
+
+## Links
+
+For more information or examples:
+
+- [Slate.js Docs](https://docs.slatejs.org/)
+- [Slate.js oficial examples](https://www.slatejs.org/examples/richtext)
+- Related projects:
+  - [slate-plugins-next](https://github.com/zbeyens/slate-plugins-next)
+  - [Link button](https://github.com/Matterwiki/Matterwiki/blob/refactor/packages/client/src/common/components/editor/toolbar/link-button/index.jsx#L55)
+  - [slate-snippets](https://github.com/objectlegal/slate-snippets)
+  - [awesome-slate](https://github.com/arahansen/awesome-slate)
+  - [Mini Google Docs Clone by Ben Awad](https://www.youtube.com/playlist?list=PLN3n1USn4xllb05dQVmRbVtGP2aM4seVq)
